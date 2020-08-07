@@ -1,0 +1,148 @@
+body{
+    text-align: center;
+    /* border: 10px solid greenyellow; */
+    /* margin: haut droite bas gauche */
+    /* margin: 10px 0 10px 0; */
+    margin: 10px 0;
+    font: 0.8em "Trebuchet MS" , Helvetica, sans-serif;
+    background-color: #dea;
+}
+/* l'id conteneur ici il est affecté à une div de la page la notation div#conteneur ou #conteneur est identique */
+#conteneur{
+    margin: 0 auto;
+    width: 770px;
+    /* background-color: rgb(102, 202, 202); */
+    text-align: left;
+    border: 2px solid #ab4;
+    /* en hexadécimal il existe 16 millions de couleurs */
+    /* il existe des couleurs rgba red green blue (alpha = opacité transparence, joue avec l'opacité de la couleur */
+    background-color: #ffffff;
+    
+    
+
+}
+
+
+h1#header{
+    height: 258px;
+    margin: 0 auto;
+    /* une image en arrière plan dans le css */
+    background: url(../img/apple.jpg) no-repeat left top;
+    /* background-repeat: no-repeat; */
+    /* background-position-x: left; */
+    /* background-position-y: top; */
+}
+
+
+h1#header a{
+        display: block;
+        width: 400px;
+        height: 70px;
+        background: url(../img/title.gif) no-repeat;
+        /* la position de l'élément a est relative à ses parents */
+        position: relative;
+        left: 350px;
+        top: 15px;
+        /* indentation négative du texte afin de le masquer pour les visiteurs et de le laisser dans le code pour les robots, ou les moteurs de recherche qui indexent le site; action de réferencement naturel */
+        text-indent: -5000px;
+        
+    }
+
+
+    ul#menu{
+        list-style-type: none;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+        /* l'image de fond est répétée horizontalemnt */
+        background: url(..//img/bg_menu.gif) repeat-x 0 -25px;
+    }
+
+
+    ul#menu li {
+        float: left;
+        text-align: center;
+    }
+
+
+    ul#menu li a {
+        /* l'élement, la boîte */
+        display: block;
+        width: 130px;
+        border-right: 2px solid #dea;
+
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 1.2em;
+        /* épaisseur de typo gold = gras */
+        font-weight: bold;
+        /* espacement entre les letrres */
+        letter-spacing: 2px;
+        color: #ffffff;
+    }
+
+
+    ul#menu li a:hover{
+        background: url(img/bg_menu.gif) repeat-x 0 0;
+        
+    }
+
+    div#contenu{
+        padding: 0 30px 0 100px;
+        /* on crée un espace à gauche et à droite */
+        background: url(../img/bg_page.gif) no-repeat 15px;
+    }
+
+    div#contenu h2 {
+        padding-left: 25px;
+        background: url(../img/little_apple.gif) no-repeat left bottom;
+        color: #99bb22;
+        border-bottom: 1px solid #99bb22;
+        /* ligne un peu plus haute = interlignage */
+        line-height: 25px;
+        font-size: 1.4em;
+    }
+
+    div#contenu h3{
+        margin-left: 15px  ;
+        padding-left: 5px;
+        border-bottom:1px solid #99bb22;
+        border-left: 3px solid #99bb22;
+        color: #99bb22;
+    }
+
+
+    div#contenu p {
+        line-height: 1.7em;
+        /* text-align: justify; */
+        text-indent:2em   
+
+    }
+
+
+    p#footer{
+        margin: 0;
+        padding-right: 10px;
+        line-height: 30px;
+        text-align: right;
+        color: #99bb22;
+    }
+
+    div#contenu blockquote {
+        border-left: 5px solid #99bb22;
+        padding-left: 10px;
+    }
+
+    .auteur-droite{
+        text-align: right;
+        color: #99bb22;
+    }
+
+    div#contenu a {
+        color: #88aa00;
+    }
+
+     
+    div#contenu a:hover {
+        color: #99bb22;
+    }
